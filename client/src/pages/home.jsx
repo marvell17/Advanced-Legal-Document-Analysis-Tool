@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import {
   Card,
   CardBody,
@@ -14,11 +14,25 @@ import { FingerPrintIcon, UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import UploadAndChat from "../widgets/UploadAndChat";
+
 
 export function Home() {
+
+  
+  const [refreshNeeded, setRefreshNeeded] = useState(false);
+
+  useEffect(() => {
+    if (refreshNeeded) {
+      window.location.reload();
+      // Optionally, reset the refresh state if needed
+      setRefreshNeeded(false);
+    }
+  }, [refreshNeeded]);
+
   return (
     <>
-      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
+      {/* <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
         <div className="absolute top-0 h-full w-full bg-[url('/img/background-3.png')] bg-cover bg-center" />
         <div className="absolute top-0 h-full w-full bg-black/60 bg-cover bg-center" />
         <div className="max-w-8xl container relative mx-auto">
@@ -33,6 +47,21 @@ export function Home() {
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
                 Tool Description will come here...
+              </Typography>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32 bg-cover bg-center" style={{ backgroundImage: `url('.././public/img/bgimg.png')` }}>
+        <div className="absolute top-0 h-full w-full bg-black bg-opacity-60" />
+        <div className="max-w-8xl container relative mx-auto">
+          <div className="flex flex-wrap items-center">
+            <div className="ml-auto mr-auto w-full px-4 text-center lg:w-8/12">
+              <Typography variant="h1" color="white" className="mb-6 font-black">
+                Advanced Legal Document Analysis Tool.
+              </Typography>
+              <Typography variant="lead" color="white" className="opacity-80">
+                {/* Tool Description will come here... */}
               </Typography>
             </div>
           </div>
@@ -66,10 +95,10 @@ export function Home() {
                 Working with us is a pleasure
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Some Description 1 ....
+                .
                 <br />
                 <br />
-                SomeDescription 2 ......
+                .
               </Typography>
               {/* <Button variant="filled">read more</Button> */}
             </div>
@@ -92,7 +121,7 @@ export function Home() {
                     Top Notch Features
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    Some Description here ....
+                    Extracts key informations such as dates, clauses, legal terms etc.
                   </Typography>
                 </CardBody>
               </Card>
@@ -100,10 +129,19 @@ export function Home() {
           </div>
         </div>
       </section>
+
+      {/* -------- Section for upload and chat ------------ */}
+      <section className="bg-white px-4 py-20" id="tool">
+        <div className="container mx-auto">
+          <UploadAndChat />
+        </div>
+      </section>
+      {/* ------------------------------------------------- */}
+
       <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle section="Our Team" heading="Here are our heroes">
-            The Project Advisor, professor and the team members are as below.
+            The Project Advisor, cordinator and the team members are as below.
           </PageTitle>
           <div className="mt-24 grid grid-cols-1 gap-12 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
             {teamData.map(({ img, name, position, socials }) => (
@@ -128,7 +166,7 @@ export function Home() {
       </section>
       <section className="relative bg-white py-24 px-4">
         <div className="container mx-auto">
-          <PageTitle section="Helping-community" heading="Fequently asked questions">
+          {/* <PageTitle section="Helping-community" heading="Fequently asked questions">
             Some of our users frequently asked questions and our experts' answers are as below.
           </PageTitle>
           <div className="mx-auto mt-20 mb-48 grid max-w-5xl grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3">
@@ -152,7 +190,7 @@ export function Home() {
                 </Typography>
               </Card>
             ))}
-          </div>
+          </div> */}
           <PageTitle section="Contact Us" heading="Want to reach us?">
             Complete this form and we will get back to you in 24 hours.
           </PageTitle>

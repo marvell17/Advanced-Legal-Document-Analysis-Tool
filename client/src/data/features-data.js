@@ -5,24 +5,24 @@ import {
 export const featuresData = [
   {
     color: "gray",
-    title: "Feature 1",
+    title: "Search and Retrieval",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Feature 1 description...",
+      "Advance search capabilities for finding relevant information quickly",
   },
   {
     color: "gray",
-    title: "Feature 2",
+    title: "Summarization",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Feature 2 description...",
+      "Provides concise brief and detailed summaries for lenghthy documents",
   },
   {
     color: "gray",
-    title: "Feature 3",
+    title: "History Log",
     icon: ChatBubbleBottomCenterTextIcon,
     description:
-      "Feature 3 description...",
+      "Access to previous search and retrievals at any time",
   },
 ];
 

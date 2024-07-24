@@ -25,6 +25,8 @@ export function SignIn() {
         password
       });
       localStorage.setItem('token', response.data.token); // Store JWT token securely
+      localStorage.setItem('isLoggedIn', 'Y');
+      localStorage.setItem('userEmail', email);
       console.log('Login successful');
       Swal.fire({
         title: "HELLO WORLD!",
@@ -32,7 +34,8 @@ export function SignIn() {
         icon: "success"
       });
       navigate('/home'); // Redirect to home page upon successful login
-      
+      window.location.reload();
+
     } catch (error) {
       if (error.response) {
         console.error('Login failed:', error.response.data);

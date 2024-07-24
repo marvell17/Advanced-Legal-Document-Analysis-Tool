@@ -1,8 +1,8 @@
 export const teamData = [
   {
-    img: "/img/team-1.jpg",
+    img: "/img/davidchan.jpg",
     name: "David Chan",
-    position: "Project Advisorr",
+    position: "Project Advisor",
     socials: [
       {
         color: "light-blue",
@@ -18,7 +18,7 @@ export const teamData = [
       },
     ],
   },{
-    img: "/img/team-1.jpg",
+    img: "/img/stanely.png",
     name: "Stanly Chor",
     position: "Cordinator",
     socials: [
@@ -36,45 +36,9 @@ export const teamData = [
       },
     ],
   },{
-    img: "/img/thamal.png",
-    name: "Thamal Wijetunge",
-    position: "Software Developer",
-    socials: [
-      {
-        color: "light-blue",
-        name: "twitter",
-      },
-      {
-        color: "blue",
-        name: "linkedin",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
-    ],
-  },{
-    img: "/img/angad.png",
-    name: "Angad Singh",
-    position: "Software Developer",
-    socials: [
-      {
-        color: "light-blue",
-        name: "twitter",
-      },
-      {
-        color: "blue",
-        name: "linkedin",
-      },
-      {
-        color: "pink",
-        name: "dribbble",
-      },
-    ],
-  },{
     img: "/img/marvell.jpg",
     name: "Marvell Pereira",
-    position: "Software Developer",
+    position: "Project Lead",
     socials: [
       {
         color: "light-blue",
@@ -89,11 +53,46 @@ export const teamData = [
         name: "dribbble",
       },
     ],
-  },
-  {
-    img: "/img/team-3.jpg",
+  },{
+    img: "/img/thamal.png",
+    name: "Thamal Wijetunge",
+    position: "Lead Developer",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "dribbble",
+      },
+    ],
+  },{
+    img: "/img/angad.jpg",
+    name: "Angad Singh",
+    position: "Solutions Architect",
+    socials: [
+      {
+        color: "light-blue",
+        name: "twitter",
+      },
+      {
+        color: "blue",
+        name: "linkedin",
+      },
+      {
+        color: "pink",
+        name: "dribbble",
+      },
+    ],
+  }, {
+    img: "/img/sareet.jpg",
     name: "Sareet Kaue",
-    position: "Software Developer",
+    position: "QA & Research Analyst",
     socials: [
       {
         color: "light-blue",
@@ -112,7 +111,7 @@ export const teamData = [
   {
     img: "/img/nimrta.png",
     name: "Nimrta Kaur",
-    position: "Software Developer",
+    position: "Project Manager",
     socials: [
       {
         color: "light-blue",
@@ -129,9 +128,9 @@ export const teamData = [
     ],
   },
   {
-    img: "/img/team-4.png",
+    img: "/img/sonia.jpg",
     name: "Sonia Rani",
-    position: "Software Developer",
+    position: "UI/UX Designer",
     socials: [
       {
         color: "light-blue",
