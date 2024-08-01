@@ -61,7 +61,7 @@ export function Home() {
                 Advanced Legal Document Analysis Tool.
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-                {/* Tool Description will come here... */}
+                The tool with state of the art NLP technology that simplifies extraction, summarization, search & retrieval from your legal documents.
               </Typography>
             </div>
           </div>

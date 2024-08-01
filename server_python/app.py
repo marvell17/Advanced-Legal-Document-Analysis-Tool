@@ -5,7 +5,7 @@ from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, StorageCon
 from llama_index.core.llms import LLMMetadata
 
 # Set your OpenAI API key
-os.environ["OPENAI_API_KEY"] = "sk-proj-pibyofg8FSSIiWFAbwtUT3BlbkFJgQi0b1kgeMNZVWfi6GS3"
+os.environ["OPENAI_API_KEY"] = "sk-proj-Jp1qgtX055bv9DnW8BN6T3BlbkFJV0kfbFPm4LJGWFHPgysq"
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize the Flask app
